@@ -20,7 +20,7 @@ import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
 
-const English = (props) => {
+const Ko = (props) => {
 
   const itemsRef = useRef(null);
   const aboutusRef = useRef(null);
@@ -56,7 +56,7 @@ const English = (props) => {
   };
 
   const whatsappNumber = '7760372901'; // Replace with your desired WhatsApp number
-  const message = 'Hello, this is a test message!'; // Replace with your desired message
+  const message = '안녕하세요, 이것은 테스트 메시지입니다!'; // Replace with your desired message
 
   const handleWhatsAppClick = () => {
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
@@ -70,9 +70,9 @@ const English = (props) => {
           <header>
             <h2 className="nameofweb">Uniqsolutions</h2>
             <ul>
-              <li><button onClick={scrollToItems}>Our service</button></li>
-              <li><button onClick={scrollToaboutus}>About us</button></li>
-              <li><button onClick={scrollTocontactus}>Contact us</button></li>
+              <li><button onClick={scrollToItems}>우리의 서비스</button></li>
+              <li><button onClick={scrollToaboutus}>회사 소개</button></li>
+              <li><button onClick={scrollTocontactus}>문의하기</button></li>
             </ul>
           </header>
         </div>
@@ -80,8 +80,8 @@ const English = (props) => {
           <header>
             <div className="temp1headtextsection">
               <section>
-              <h1 className="slaestexttemp1">INDIA’S NO.1 IMMIGRATION & VISA CONSULTANT</h1>
-              <button onClick={scrollToItems} className="btnb2bc2p">Our services</button>
+              <h1 className="slaestexttemp1">인도 최고의 이민 및 비자 컨설턴트</h1>
+              <button onClick={scrollToItems} className="btnb2bc2p">우리의 서비스</button>
               </section>
             </div>
             <div className="temp1head1img">
@@ -97,8 +97,8 @@ const English = (props) => {
               <img src={conu}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>COUNSELED</h2>
-              <p>10 MILLION+</p>
+              <h2>상담</h2>
+              <p>1000만 명 이상</p>
             </section>
           </div>
           <div className="key1temp1">
@@ -106,8 +106,8 @@ const English = (props) => {
               <img src={ex}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>EXPERTS</h2>
-              <p>SINCE 1999</p>
+              <h2>전문가</h2>
+              <p>1999년 이후</p>
             </section>
           </div>
           <div className="key1temp1">
@@ -115,126 +115,126 @@ const English = (props) => {
               <img src={succ}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>SUCCESSES</h2>
-              <p>1 MILLION</p>
+              <h2>성과</h2>
+              <p>100만 명 이상</p>
             </section>
           </div>
         </div>
         <div className="contactfrom" ref={contactusRef}>
         <form ref={form} onSubmit={sendEmail}>
-            <h2>Contact us</h2>
+            <h2>문의하기</h2>
             <div className="blcokemail">
-      <label>Name</label><br/>
+      <label>이름</label><br/>
       <input type="text" name="from_name" className="norminp"/><br/>
       </div>
       <div className="blcokemail">
-      <label>Email</label><br/>
+      <label>이메일</label><br/>
       <input type="email" name="to_name"  className="norminp"/><br/>
       </div>
       <div className="blcokemail">
-      <label>Phone number</label><br/>
+      <label>전화번호</label><br/>
       <input name="message" className="norminp"/><br/>
       </div>
-      <input type="submit" value="Send" className="btninpemail"/><br/>
+      <input type="submit" value="보내기" className="btninpemail"/><br/>
       <button onClick={handleWhatsAppClick} className="whatsappbtn">WhatsApp</button>
     </form>
         </div>
         <div className="ourcomapnytypetemp1">
           <section className="ourcompanytypetexttemp1head">
-            <h1>About us</h1>
-            <p>Uniqsolutions is India’s No.1 Overseas Career Consultant and presumably the world’s largest B2C immigration firm. Established in 1999, our 50+ company owned and managed offices across India, Australia, the United Arab Emirates, the United Kingdom, and Canada and 1500+ employees serve over 1 million customers. We are Licensed Recruitment Agents in India and IATA travel agents. As part of our services, we provide personal one-on-one counseling to about 1,00,000+ individual inquiries every month for migration, study and work visas. Over 50% of our customers are through word-of-mouth. No other company understands overseas careers like we do.</p>
-            <button ref={itemsRef}>Our services</button>
+            <h1>회사 소개</h1>
+            <p>Uniqsolutions은 인도 최고의 해외 이민 컨설턴트이자 아마도 세계에서 가장 큰 B2C 이민 회사입니다. 1999년 설립된 이후 인도, 호주, 아랍 에미리트, 영국, 캐나다에 50개 이상의 회사 소유 및 운영 사무실과 1500명 이상의 직원이 100만 명 이상의 고객에게 서비스를 제공하고 있습니다. 우리는 인도에서 라이센스를 받은 채용 에이전트이자 IATA 여행 에이전트입니다. 우리의 서비스 일환으로 매월 이민, 학업 및 근로 비자에 대한 약 10만 건의 개별 문의에 대한 개인 상담을 제공합니다. 우리 고객의 50% 이상은 워드 오브 마우스를 통해 찾아옵니다. 우리와 같이 외국에서의 경력을 이해하는 다른 회사가 없습니다.</p>
+            <button ref={itemsRef}>우리의 서비스</button>
           </section>
           <section className="imgtypecomplaytemp1">
             <img src={banner}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
-          <h1>Our services</h1>
+          <h1>우리의 서비스</h1>
           <section className="allserv">
           <section className="servsec1">
           <div className="sevices1">
             <img src={canada}/>
-            <h3>Canada</h3>
+            <h3>캐나다</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Work Visa – FSTP</li>
-                <li>Business Visa</li>
-                <li>PR Visa – Express Entry</li>
-                <li>PR Visa – PNP</li>
+                <li>방문자 비자</li>
+                <li>학생 비자 및 입학</li>
+                <li>근로 비자 – FSTP</li>
+                <li>비즈니스 비자</li>
+                <li>영주권 비자 – 익스프레스 엔트리</li>
+                <li>영주권 비자 – PNP</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>문의하기</button>
           </div>
           <div className="sevices1">
             <img src={Aus}/>
-            <h3>AUSTRALIA</h3>
+            <h3>호주</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Graduate Work Visa</li>
-                <li>Subclass 189</li>
-                <li>TSS Visa</li>
-                <li>Business Visa</li>
-                <li>PR Visa – Skill Migration</li>
+                <li>방문자 비자</li>
+                <li>학생 비자 및 입학</li>
+                <li>대학원 연구 비자</li>
+                <li>서브클래스 189</li>
+                <li>TSS 비자</li>
+                <li>비즈니스 비자</li>
+                <li>영주권 비자 – 스킬 이민</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>문의하기</button>
           </div>
           <div className="sevices1">
             <img src={germ}/>
-            <h3>GERMANY</h3>
+            <h3>독일</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Job Seeker Visa</li>
-                <li>Business Visa</li>
+                <li>방문자 비자</li>
+                <li>학생 비자 및 입학</li>
+                <li>직업 구직자 비자</li>
+                <li>비즈니스 비자</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>문의하기</button>
           </div>
           </section>
           <section className="sersec2">
           <div className="sevices1">
             <img src={USA}/>
-            <h3>USA</h3>
+            <h3>미국</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Work Visa – FSTP</li>
-                <li>Business Visa</li>
+                <li>방문자 비자</li>
+                <li>학생 비자 및 입학</li>
+                <li>근로 비자 – FSTP</li>
+                <li>비즈니스 비자</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>문의하기</button>
           </div>
           <div className="sevices1">
             <img src={uk}/>
-            <h3>UK</h3>
+            <h3>영국</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa – Tier 4</li>
-                <li>Work Visa – Skilled Worker</li>
-                <li>Business Visa</li>
-                <li>Innovator Visa</li>
-                <li>HPI Visa</li>
+                <li>방문자 비자</li>
+                <li>학생 비자 – 티어 4</li>
+                <li>근로 비자 – 스킬드 워커</li>
+                <li>비즈니스 비자</li>
+                <li>이노베이터 비자</li>
+                <li>HPI 비자</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>문의하기</button>
           </div>
           <div className="sevices1">
             <img src={uae}/>
-            <h3>Canada</h3>
+            <h3>아랍 에미리트</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Tourist Visa</li>
-                <li>Work Visa</li>
-                <li>Golden Visa</li>
-                <li>Green Visa</li>
+                <li>방문자 비자</li>
+                <li>관광 비자</li>
+                <li>근로 비자</li>
+                <li>골든 비자</li>
+                <li>그린 비자</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>문의하기</button>
           </div>
           </section>
           </section>
         </div>
         <div className="contactustemp1">
           <footer>
-            <h2>Contact us</h2>
+            <h2>문의하기</h2>
             <ul>
               <li>@instagram</li>
               <li>77665544</li>
@@ -247,4 +247,4 @@ const English = (props) => {
   );
 };
 
-export default English;
+export default Ko;

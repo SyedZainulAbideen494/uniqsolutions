@@ -20,7 +20,7 @@ import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
 
-const English = (props) => {
+const Deu = (props) => {
 
   const itemsRef = useRef(null);
   const aboutusRef = useRef(null);
@@ -55,8 +55,8 @@ const English = (props) => {
       });
   };
 
-  const whatsappNumber = '7760372901'; // Replace with your desired WhatsApp number
-  const message = 'Hello, this is a test message!'; // Replace with your desired message
+  const whatsappNumber = '7760372901'; // Ersetzen Sie dies durch Ihre gewünschte WhatsApp-Nummer
+  const message = 'Hallo, dies ist eine Testnachricht!'; // Ersetzen Sie dies durch Ihre gewünschte Nachricht
 
   const handleWhatsAppClick = () => {
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
@@ -70,9 +70,9 @@ const English = (props) => {
           <header>
             <h2 className="nameofweb">Uniqsolutions</h2>
             <ul>
-              <li><button onClick={scrollToItems}>Our service</button></li>
-              <li><button onClick={scrollToaboutus}>About us</button></li>
-              <li><button onClick={scrollTocontactus}>Contact us</button></li>
+              <li><button onClick={scrollToItems}>Unsere Dienstleistungen</button></li>
+              <li><button onClick={scrollToaboutus}>Über uns</button></li>
+              <li><button onClick={scrollTocontactus}>Kontaktiere uns</button></li>
             </ul>
           </header>
         </div>
@@ -80,14 +80,14 @@ const English = (props) => {
           <header>
             <div className="temp1headtextsection">
               <section>
-              <h1 className="slaestexttemp1">INDIA’S NO.1 IMMIGRATION & VISA CONSULTANT</h1>
-              <button onClick={scrollToItems} className="btnb2bc2p">Our services</button>
+              <h1 className="slaestexttemp1">INDIENS NR. 1 EINWANDERUNGS- UND VISUMBERATER</h1>
+              <button onClick={scrollToItems} className="btnb2bc2p">Unsere Dienstleistungen</button>
               </section>
             </div>
             <div className="temp1head1img">
-              <secion>
+              <section>
                 <img src={banner}/>
-              </secion>
+              </section>
             </div>
           </header>
         </div>
@@ -97,8 +97,8 @@ const English = (props) => {
               <img src={conu}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>COUNSELED</h2>
-              <p>10 MILLION+</p>
+              <h2>Beraten</h2>
+              <p>Über 10 Millionen+</p>
             </section>
           </div>
           <div className="key1temp1">
@@ -106,8 +106,8 @@ const English = (props) => {
               <img src={ex}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>EXPERTS</h2>
-              <p>SINCE 1999</p>
+              <h2>Experten</h2>
+              <p>Seit 1999</p>
             </section>
           </div>
           <div className="key1temp1">
@@ -115,81 +115,81 @@ const English = (props) => {
               <img src={succ}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>SUCCESSES</h2>
-              <p>1 MILLION</p>
+              <h2>Erfolge</h2>
+              <p>1 Million</p>
             </section>
           </div>
         </div>
         <div className="contactfrom" ref={contactusRef}>
         <form ref={form} onSubmit={sendEmail}>
-            <h2>Contact us</h2>
+            <h2>Kontaktiere uns</h2>
             <div className="blcokemail">
       <label>Name</label><br/>
       <input type="text" name="from_name" className="norminp"/><br/>
       </div>
       <div className="blcokemail">
-      <label>Email</label><br/>
+      <label>E-Mail</label><br/>
       <input type="email" name="to_name"  className="norminp"/><br/>
       </div>
       <div className="blcokemail">
-      <label>Phone number</label><br/>
+      <label>Telefonnummer</label><br/>
       <input name="message" className="norminp"/><br/>
       </div>
-      <input type="submit" value="Send" className="btninpemail"/><br/>
+      <input type="submit" value="Senden" className="btninpemail"/><br/>
       <button onClick={handleWhatsAppClick} className="whatsappbtn">WhatsApp</button>
     </form>
         </div>
         <div className="ourcomapnytypetemp1">
           <section className="ourcompanytypetexttemp1head">
-            <h1>About us</h1>
-            <p>Uniqsolutions is India’s No.1 Overseas Career Consultant and presumably the world’s largest B2C immigration firm. Established in 1999, our 50+ company owned and managed offices across India, Australia, the United Arab Emirates, the United Kingdom, and Canada and 1500+ employees serve over 1 million customers. We are Licensed Recruitment Agents in India and IATA travel agents. As part of our services, we provide personal one-on-one counseling to about 1,00,000+ individual inquiries every month for migration, study and work visas. Over 50% of our customers are through word-of-mouth. No other company understands overseas careers like we do.</p>
-            <button ref={itemsRef}>Our services</button>
+            <h1>Über uns</h1>
+            <p>Uniqsolutions ist Indiens Nummer 1 Übersee-Karriereberatung und wahrscheinlich das weltweit größte B2C-Einwanderungsunternehmen. Gegründet im Jahr 1999, betreiben unsere über 50 unternehmenseigenen und -geführten Büros in Indien, Australien, den Vereinigten Arabischen Emiraten, dem Vereinigten Königreich und Kanada mit mehr als 1500 Mitarbeitern über 1 Million Kunden. Wir sind lizenzierte Rekrutierungsagenten in Indien und IATA-Reisebüros. Als Teil unserer Dienstleistungen bieten wir persönliche Einzelberatung für etwa 100.000 individuelle Anfragen jeden Monat für Migration, Studium und Arbeit an. Über 50% unserer Kunden kommen durch Mundpropaganda zu uns. Kein anderes Unternehmen versteht Überseekarrieren so gut wie wir.</p>
+            <button ref={itemsRef}>Unsere Dienstleistungen</button>
           </section>
           <section className="imgtypecomplaytemp1">
             <img src={banner}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
-          <h1>Our services</h1>
+          <h1>Unsere Dienstleistungen</h1>
           <section className="allserv">
           <section className="servsec1">
           <div className="sevices1">
             <img src={canada}/>
-            <h3>Canada</h3>
+            <h3>Kanada</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Work Visa – FSTP</li>
-                <li>Business Visa</li>
-                <li>PR Visa – Express Entry</li>
-                <li>PR Visa – PNP</li>
+                <li>Besuchervisum</li>
+                <li>Studentenvisum und Zulassung</li>
+                <li>Arbeitsvisum - FSTP</li>
+                <li>Geschäftsvisum</li>
+                <li>PR-Visum - Express Entry</li>
+                <li>PR-Visum - PNP</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>Kontaktiere uns</button>
           </div>
           <div className="sevices1">
             <img src={Aus}/>
-            <h3>AUSTRALIA</h3>
+            <h3>Australien</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Graduate Work Visa</li>
-                <li>Subclass 189</li>
-                <li>TSS Visa</li>
-                <li>Business Visa</li>
-                <li>PR Visa – Skill Migration</li>
+                <li>Besuchervisum</li>
+                <li>Studentenvisum und Zulassung</li>
+                <li>Absolventen-Arbeitsvisum</li>
+                <li>Subclass 189 Visum</li>
+                <li>TSS Visum</li>
+                <li>Geschäftsvisum</li>
+                <li>PR-Visum - Skill Migration</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>Kontaktiere uns</button>
           </div>
           <div className="sevices1">
             <img src={germ}/>
-            <h3>GERMANY</h3>
+            <h3>Deutschland</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Job Seeker Visa</li>
-                <li>Business Visa</li>
+                <li>Besuchervisum</li>
+                <li>Studentenvisum und Zulassung</li>
+                <li>Job-Suchender-Visum</li>
+                <li>Geschäftsvisum</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>Kontaktiere uns</button>
           </div>
           </section>
           <section className="sersec2">
@@ -197,44 +197,44 @@ const English = (props) => {
             <img src={USA}/>
             <h3>USA</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Work Visa – FSTP</li>
-                <li>Business Visa</li>
+                <li>Besuchervisum</li>
+                <li>Studentenvisum und Zulassung</li>
+                <li>Arbeitsvisum - FSTP</li>
+                <li>Geschäftsvisum</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>Kontaktiere uns</button>
           </div>
           <div className="sevices1">
             <img src={uk}/>
-            <h3>UK</h3>
+            <h3>Vereinigtes Königreich</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa – Tier 4</li>
-                <li>Work Visa – Skilled Worker</li>
-                <li>Business Visa</li>
-                <li>Innovator Visa</li>
-                <li>HPI Visa</li>
+                <li>Besuchervisum</li>
+                <li>Studentenvisum - Tier 4</li>
+                <li>Arbeitsvisum - Fachkraft</li>
+                <li>Geschäftsvisum</li>
+                <li>Innovator-Visum</li>
+                <li>HPI-Visum</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>Kontaktiere uns</button>
           </div>
           <div className="sevices1">
             <img src={uae}/>
-            <h3>Canada</h3>
+            <h3>Vereinigte Arabische Emirate</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Tourist Visa</li>
-                <li>Work Visa</li>
+                <li>Besuchervisum</li>
+                <li>Touristenvisum</li>
+                <li>Arbeitsvisum</li>
                 <li>Golden Visa</li>
-                <li>Green Visa</li>
+                <li>Grünes Visum</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>Kontaktiere uns</button>
           </div>
           </section>
           </section>
         </div>
         <div className="contactustemp1">
           <footer>
-            <h2>Contact us</h2>
+            <h2>Kontaktiere uns</h2>
             <ul>
               <li>@instagram</li>
               <li>77665544</li>
@@ -247,4 +247,4 @@ const English = (props) => {
   );
 };
 
-export default English;
+export default Deu;

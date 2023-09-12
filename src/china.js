@@ -20,7 +20,7 @@ import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
 
-const English = (props) => {
+const China = (props) => {
 
   const itemsRef = useRef(null);
   const aboutusRef = useRef(null);
@@ -55,8 +55,8 @@ const English = (props) => {
       });
   };
 
-  const whatsappNumber = '7760372901'; // Replace with your desired WhatsApp number
-  const message = 'Hello, this is a test message!'; // Replace with your desired message
+  const whatsappNumber = '7760372901'; // 请替换为您的 WhatsApp 号码
+  const message = '你好，这是一条测试消息！'; // 请替换为您的消息
 
   const handleWhatsAppClick = () => {
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
@@ -70,9 +70,9 @@ const English = (props) => {
           <header>
             <h2 className="nameofweb">Uniqsolutions</h2>
             <ul>
-              <li><button onClick={scrollToItems}>Our service</button></li>
-              <li><button onClick={scrollToaboutus}>About us</button></li>
-              <li><button onClick={scrollTocontactus}>Contact us</button></li>
+              <li><button onClick={scrollToItems}>我们的服务</button></li>
+              <li><button onClick={scrollToaboutus}>关于我们</button></li>
+              <li><button onClick={scrollTocontactus}>联系我们</button></li>
             </ul>
           </header>
         </div>
@@ -80,14 +80,14 @@ const English = (props) => {
           <header>
             <div className="temp1headtextsection">
               <section>
-              <h1 className="slaestexttemp1">INDIA’S NO.1 IMMIGRATION & VISA CONSULTANT</h1>
-              <button onClick={scrollToItems} className="btnb2bc2p">Our services</button>
+              <h1 className="slaestexttemp1">印度第一移民和签证咨询顾问</h1>
+              <button onClick={scrollToItems} className="btnb2bc2p">我们的服务</button>
               </section>
             </div>
             <div className="temp1head1img">
-              <secion>
+              <section>
                 <img src={banner}/>
-              </secion>
+              </section>
             </div>
           </header>
         </div>
@@ -97,8 +97,8 @@ const English = (props) => {
               <img src={conu}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>COUNSELED</h2>
-              <p>10 MILLION+</p>
+              <h2>咨询</h2>
+              <p>超过1000万</p>
             </section>
           </div>
           <div className="key1temp1">
@@ -106,8 +106,8 @@ const English = (props) => {
               <img src={ex}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>EXPERTS</h2>
-              <p>SINCE 1999</p>
+              <h2>专家</h2>
+              <p>自1999年以来</p>
             </section>
           </div>
           <div className="key1temp1">
@@ -115,126 +115,126 @@ const English = (props) => {
               <img src={succ}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>SUCCESSES</h2>
-              <p>1 MILLION</p>
+              <h2>成功案例</h2>
+              <p>超过100万</p>
             </section>
           </div>
         </div>
         <div className="contactfrom" ref={contactusRef}>
         <form ref={form} onSubmit={sendEmail}>
-            <h2>Contact us</h2>
+            <h2>联系我们</h2>
             <div className="blcokemail">
-      <label>Name</label><br/>
+      <label>姓名</label><br/>
       <input type="text" name="from_name" className="norminp"/><br/>
       </div>
       <div className="blcokemail">
-      <label>Email</label><br/>
+      <label>电子邮件</label><br/>
       <input type="email" name="to_name"  className="norminp"/><br/>
       </div>
       <div className="blcokemail">
-      <label>Phone number</label><br/>
+      <label>电话号码</label><br/>
       <input name="message" className="norminp"/><br/>
       </div>
-      <input type="submit" value="Send" className="btninpemail"/><br/>
+      <input type="submit" value="发送" className="btninpemail"/><br/>
       <button onClick={handleWhatsAppClick} className="whatsappbtn">WhatsApp</button>
     </form>
         </div>
         <div className="ourcomapnytypetemp1">
           <section className="ourcompanytypetexttemp1head">
-            <h1>About us</h1>
-            <p>Uniqsolutions is India’s No.1 Overseas Career Consultant and presumably the world’s largest B2C immigration firm. Established in 1999, our 50+ company owned and managed offices across India, Australia, the United Arab Emirates, the United Kingdom, and Canada and 1500+ employees serve over 1 million customers. We are Licensed Recruitment Agents in India and IATA travel agents. As part of our services, we provide personal one-on-one counseling to about 1,00,000+ individual inquiries every month for migration, study and work visas. Over 50% of our customers are through word-of-mouth. No other company understands overseas careers like we do.</p>
-            <button ref={itemsRef}>Our services</button>
+            <h1>关于我们</h1>
+            <p>Uniqsolutions 是印度的第一海外职业顾问公司，也可能是全球最大的B2C移民公司。成立于1999年，我们在印度、澳大利亚、阿联酋、英国和加拿大拥有50多家自营和管理的公司办事处，拥有1500多名员工，为100多万名客户提供服务。我们是印度的持牌招聘代理和IATA旅行代理。作为我们服务的一部分，我们每月为超过10万个个人咨询提供个人一对一咨询，涵盖移民、学习和工作签证。超过50%的客户通过口口相传来找到我们。没有其他公司像我们一样了解海外职业。</p>
+            <button ref={itemsRef}>我们的服务</button>
           </section>
           <section className="imgtypecomplaytemp1">
             <img src={banner}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
-          <h1>Our services</h1>
+          <h1>我们的服务</h1>
           <section className="allserv">
           <section className="servsec1">
           <div className="sevices1">
             <img src={canada}/>
-            <h3>Canada</h3>
+            <h3>加拿大</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Work Visa – FSTP</li>
-                <li>Business Visa</li>
-                <li>PR Visa – Express Entry</li>
-                <li>PR Visa – PNP</li>
+                <li>访客签证</li>
+                <li>学生签证和入学</li>
+                <li>工作签证 - FSTP</li>
+                <li>商务签证</li>
+                <li>永久居民签证 - 快速通道</li>
+                <li>永久居民签证 - PNP</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>联系我们</button>
           </div>
           <div className="sevices1">
             <img src={Aus}/>
-            <h3>AUSTRALIA</h3>
+            <h3>澳大利亚</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Graduate Work Visa</li>
-                <li>Subclass 189</li>
-                <li>TSS Visa</li>
-                <li>Business Visa</li>
-                <li>PR Visa – Skill Migration</li>
+                <li>访客签证</li>
+                <li>学生签证和入学</li>
+                <li>研究生工作签证</li>
+                <li>Subclass 189签证</li>
+                <li>TSS签证</li>
+                <li>商务签证</li>
+                <li>永久居民签证 - 技术移民</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>联系我们</button>
           </div>
           <div className="sevices1">
             <img src={germ}/>
-            <h3>GERMANY</h3>
+            <h3>德国</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Job Seeker Visa</li>
-                <li>Business Visa</li>
+                <li>访客签证</li>
+                <li>学生签证和入学</li>
+                <li>求职者签证</li>
+                <li>商务签证</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>联系我们</button>
           </div>
           </section>
           <section className="sersec2">
           <div className="sevices1">
             <img src={USA}/>
-            <h3>USA</h3>
+            <h3>美国</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa & Admission</li>
-                <li>Work Visa – FSTP</li>
-                <li>Business Visa</li>
+                <li>访客签证</li>
+                <li>学生签证和入学</li>
+                <li>工作签证 - FSTP</li>
+                <li>商务签证</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>联系我们</button>
           </div>
           <div className="sevices1">
             <img src={uk}/>
-            <h3>UK</h3>
+            <h3>英国</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Student Visa – Tier 4</li>
-                <li>Work Visa – Skilled Worker</li>
-                <li>Business Visa</li>
-                <li>Innovator Visa</li>
-                <li>HPI Visa</li>
+                <li>访客签证</li>
+                <li>学生签证 - Tier 4</li>
+                <li>工作签证 - 技术工人</li>
+                <li>商务签证</li>
+                <li>创新家签证</li>
+                <li>HPI签证</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>联系我们</button>
           </div>
           <div className="sevices1">
             <img src={uae}/>
-            <h3>Canada</h3>
+            <h3>阿联酋</h3>
             <ul>
-                <li>Visitor Visa</li>
-                <li>Tourist Visa</li>
-                <li>Work Visa</li>
-                <li>Golden Visa</li>
-                <li>Green Visa</li>
+                <li>访客签证</li>
+                <li>旅游签证</li>
+                <li>工作签证</li>
+                <li>黄金签证</li>
+                <li>绿色签证</li>
             </ul>
-            <button onClick={scrollTocontactus}>Contact us</button>
+            <button onClick={scrollTocontactus}>联系我们</button>
           </div>
           </section>
           </section>
         </div>
         <div className="contactustemp1">
           <footer>
-            <h2>Contact us</h2>
+            <h2>联系我们</h2>
             <ul>
               <li>@instagram</li>
               <li>77665544</li>
@@ -247,4 +247,4 @@ const English = (props) => {
   );
 };
 
-export default English;
+export default China;
