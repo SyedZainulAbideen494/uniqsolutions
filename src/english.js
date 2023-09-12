@@ -62,6 +62,43 @@ const English = (props) => {
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
+  const SimpleDropdown = () => {
+    const languageOptions = [
+      { code: 'en', name: 'English' },
+      { code: 'hi', name: 'हिन्दी' }, // Hindi
+      { code: 'te', name: 'తెలుగు' }, // Telugu
+      { code: 'mr', name: 'मराठी' }, // Marathi
+      { code: 'ta', name: 'தமிழ்' }, // Tamil
+      { code: 'kn', name: 'ಕನ್ನಡ' }, // Kannada
+      { code: 'fr', name: 'Français' }, // French
+      { code: 'de', name: 'Deutsch' }, // German
+      { code: 'ko', name: '한국어' }, // Korean
+      { code: 'uk', name: 'українська' }, // Ukrainian
+      { code: 'ar', name: 'العربية' }, // Arabic
+      { code: 'zh', name: '中文' }, // Chinese
+    ];
+  
+    const handleLanguageChange = (event) => {
+      const selectedLanguage = event.target.value;
+  
+      // Redirect to the selected language route
+      window.location.href = `/${selectedLanguage}`;
+    };
+  
+    return (
+      <div className="simple-dropdown">
+        <select onChange={handleLanguageChange}>
+          {languageOptions.map((option) => (
+            <option key={option.code} value={option.code}>
+              {option.name}
+            </option>
+          ))}
+        </select>
+      </div>
+    );
+  };
+  
+
 
   return (
     <Fragment>
@@ -73,6 +110,7 @@ const English = (props) => {
               <li><button onClick={scrollToItems}>Our service</button></li>
               <li><button onClick={scrollToaboutus}>About us</button></li>
               <li><button onClick={scrollTocontactus}>Contact us</button></li>
+                <SimpleDropdown/>
             </ul>
           </header>
         </div>

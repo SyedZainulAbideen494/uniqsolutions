@@ -20,7 +20,7 @@ import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
 
-const Hi = (props) => {
+const Telugu = (props) => {
 
   const itemsRef = useRef(null);
   const aboutusRef = useRef(null);
@@ -102,11 +102,11 @@ const Hi = (props) => {
       <div className="maindivtemp1">
         <div className="temp1head2">
           <header>
-            <h2 className="nameofweb">Uniqsolutions</h2>
+            <h2 className="nameofweb">అద్వితీయ సమాధానాలు</h2>
             <ul>
-              <li><button onClick={scrollToItems}>हमारी सेवाएं</button></li>
-              <li><button onClick={scrollToaboutus}>हमारे बारे में</button></li>
-              <li><button onClick={scrollTocontactus}>हमसे संपर्क करें</button></li>
+              <li><button onClick={scrollToItems}>మా సేవలు</button></li>
+              <li><button onClick={scrollToaboutus}>మా గురించి</button></li>
+              <li><button onClick={scrollTocontactus}>మమ్మల్ని సంప్రదించండి</button></li>
             </ul>
             <SimpleDropdown/>
           </header>
@@ -115,8 +115,8 @@ const Hi = (props) => {
           <header>
             <div className="temp1headtextsection">
               <section>
-              <h1 className="slaestexttemp1">भारत का संख्या 1 वीज़ा सलाहकार</h1>
-              <button onClick={scrollToItems} className="btnb2bc2p">हमारी सेवाएं</button>
+              <h1 className="slaestexttemp1">ఇండియా నంబర్ 1 విసా మరియు ఎయిర్ ట్రావెల్ సాంస్థలు</h1>
+              <button onClick={scrollToItems} className="btnb2bc2p">మా సేవలు</button>
               </section>
             </div>
             <div className="temp1head1img">
@@ -132,8 +132,8 @@ const Hi = (props) => {
               <img src={conu}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>सलाह दी</h2>
-              <p>10 मिलियन+</p>
+              <h2>సలహా ఇచ్చాం</h2>
+              <p>10 మిలియన్+</p>
             </section>
           </div>
           <div className="key1temp1">
@@ -141,8 +141,8 @@ const Hi = (props) => {
               <img src={ex}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>विशेषज्ञ</h2>
-              <p>1999 से</p>
+              <h2>పరిపాలకులు</h2>
+              <p>1999 నుంచి</p>
             </section>
           </div>
           <div className="key1temp1">
@@ -150,128 +150,128 @@ const Hi = (props) => {
               <img src={succ}/>
             </section>
             <section className="textsectiontemp1key1">
-              <h2>सफलताएँ</h2>
-              <p>1 मिलियन</p>
+              <h2>విజయాలు</h2>
+              <p>1 మిలియన్</p>
             </section>
           </div>
         </div>
         <div className="contactfrom" ref={contactusRef}>
         <form ref={form} onSubmit={sendEmail}>
-            <h2>हमसे संपर्क करें</h2>
+            <h2>మమ్మలు సంప్రదించండి</h2>
             <div className="blcokemail">
-      <label>नाम</label><br/>
+      <label>పేరు</label><br/>
       <input type="text" name="from_name" className="norminp"/><br/>
       </div>
       <div className="blcokemail">
-      <label>ईमेल</label><br/>
+      <label>ఇమెయిల్</label><br/>
       <input type="email" name="to_name"  className="norminp"/><br/>
       </div>
       <div className="blcokemail">
-      <label>फ़ोन नंबर</label><br/>
+      <label>ఫోన్ నంబర్</label><br/>
       <input name="message" className="norminp"/><br/>
       </div>
-      <input type="submit" value="भेजें" className="btninpemail"/><br/>
+      <input type="submit" value="పంపు" className="btninpemail"/><br/>
       <button onClick={handleWhatsAppClick} className="whatsappbtn">WhatsApp</button>
     </form>
         </div>
         <div className="ourcomapnytypetemp1">
           <section className="ourcompanytypetexttemp1head">
-            <h1>हमारे बारे में</h1>
-            <p>यूनिक्सोल्यूशंस भारत का नंबर 1 विदेशी करियर सलाहकार है और संभावत: दुनिया का सबसे बड़ा बी2सी इमिग्रेशन कंपनी है। 1999 में स्थापित होने के बाद हमारे 50+ कंपनी के स्वामित्व वाले और प्रबंधित कार्यालय भारत, ऑस्ट्रेलिया, संयुक्त अरब इमारात, संयुक्त राज्य और कनाडा में हैं, और 1500+ कर्मचारी हमारे 1 मिलियन से अधिक ग्राहकों की सेवा करते हैं। हम भारत में लाइसेंस्ड रिक्रूटमेंट एजेंट्स और IATA यात्रा एजेंट्स हैं। हमारी सेवाओं के हिस्से के तौर पर हम प्रत्येक महीने लगभग 1,00,000+ व्यक्तिगत पूछताछ के लिए पर्सनल वन-ऑन-वन सलाहकारी प्रदान करते हैं, जैसे कि प्रवास, अध्ययन और काम की वीज़ा के लिए। हमारे ग्राहकों में से 50% से अधिक शब्द-द्वारा मुंहास्य किए जाते हैं। कोई और कंपनी हमारे तरह विदेशी करियर को समझती नहीं है।</p>
-            <button ref={itemsRef}>हमारी सेवाएं</button>
+            <h1>మమ్మలు గురించి</h1>
+            <p>అద్వితీయ సమాధానాలు ఇండియాలో సంచలనమైన ఒక B2C విసా కంపెనీ మరియు అనుమతి విచారకులు. 1999 లో స్థాపించబడిన, మా 50+ సంస్థానాలు భారతదేశం, ఆస్త్రేలియా, యూనైటెడ్ అరబ్ ఎమిరేట్స్, యూనైటైడ్ కింగ్డమ్, మరియు కనడా లో ఉన్నాయి, మరియు 1500+ ఉద్యోగారులు 1 మిలియన్ కస్టమర్లకు సర్వీస్ చేస్తున్నాయి. మాకు భారతదేశంలో అనుమతి యాత్రకులు అనుమతి యాత్రకులు అనుమతిగా ఉన్నాయి మరియు పని విసాలకు వ్యక్తిగత ఒకటి-ఒకటి సలహా ఇచ్చబడుతుంది. మా గ్రాహకుల నుండి అధికమైన 50% వార్తల వల్ల వచ్చింది. ఇతర సంస్థలకు మాటీకంటే వద్ద విదేశ కరీయాలను మాకు తెలుసుకోవడం లేదు.</p>
+            <button ref={itemsRef}>మా సేవలు</button>
           </section>
           <section className="imgtypecomplaytemp1">
             <img src={banner}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
-          <h1>हमारी सेवाएं</h1>
+          <h1>మా సేవలు</h1>
           <section className="allserv">
           <section className="servsec1">
           <div className="sevices1">
             <img src={canada}/>
-            <h3>कनाडा</h3>
+            <h3>కనడా</h3>
             <ul>
-                <li>आगंतुक वीज़ा</li>
-                <li>छात्र वीज़ा और प्रवेश</li>
-                <li>काम वीज़ा – FSTP</li>
-                <li>व्यापारिक वीज़ा</li>
-                <li>पीआर वीज़ा – एक्सप्रेस एंट्री</li>
-                <li>पीआर वीज़ा – पीएनपी</li>
+                <li>సందర్శకుల విసా</li>
+                <li>విద్యార్థుల విసా & అడ్మిషన్</li>
+                <li>విద్యాభ్యాస విసా - FSTP</li>
+                <li>వ్యాపార విసా</li>
+                <li>PR విసా - ఎక్స్ప్రెస్ ఎంట్రీ</li>
+                <li>PR విసా - PNP</li>
             </ul>
-            <button onClick={scrollTocontactus}>हमसे संपर्क करें</button>
+            <button onClick={scrollTocontactus}>మమ్మలు సంప్రదించండి</button>
           </div>
           <div className="sevices1">
             <img src={Aus}/>
-            <h3>ऑस्ट्रेलिया</h3>
+            <h3>ఆస్త్రేలియా</h3>
             <ul>
-                <li>आगंतुक वीज़ा</li>
-                <li>छात्र वीज़ा और प्रवेश</li>
-                <li>ग्रेजुएट वर्क वीज़ा</li>
-                <li>सबक्लास 189</li>
-                <li>TSS वीज़ा</li>
-                <li>व्यापारिक वीज़ा</li>
-                <li>पीआर वीज़ा – कौशल प्रवासन</li>
+                <li>సందర్శకుల విసా</li>
+                <li>విద్యార్థుల విసా & అడ్మిషన్</li>
+                <li>గ్రాజుయట్ వర్క్ విసా</li>
+                <li>సబ్క్లాస్ 189</li>
+                <li>TSS విసా</li>
+                <li>వ్యాపార విసా</li>
+                <li>PR విసా - స్కిల్ మైగ్రేషన్</li>
             </ul>
-            <button onClick={scrollTocontactus}>हमसे संपर्क करें</button>
+            <button onClick={scrollTocontactus}>మమ్మలు సంప్రదించండి</button>
           </div>
           <div className="sevices1">
             <img src={germ}/>
-            <h3>जर्मनी</h3>
+            <h3>జర్మని</h3>
             <ul>
-                <li>आगंतुक वीज़ा</li>
-                <li>छात्र वीज़ा और प्रवेश</li>
-                <li>जॉब सीकर वीज़ा</li>
-                <li>व्यापारिक वीज़ा</li>
+                <li>సందర్శకుల విసా</li>
+                <li>విద్యార్థుల విసా & అడ్మిషన్</li>
+                <li>జాబ్ సీకర్ విసా</li>
+                <li>వ్యాపార విసా</li>
             </ul>
-            <button onClick={scrollTocontactus}>हमसे संपर्क करें</button>
+            <button onClick={scrollTocontactus}>మమ్మలు సంప్రదించండి</button>
           </div>
           </section>
           <section className="sersec2">
           <div className="sevices1">
             <img src={USA}/>
-            <h3>संयुक्त राज्य अमेरिका</h3>
+            <h3>యునైటైడ్ స్టేట్స్</h3>
             <ul>
-                <li>आगंतुक वीज़ा</li>
-                <li>छात्र वीज़ा और प्रवेश</li>
-                <li>काम वीज़ा – FSTP</li>
-                <li>व्यापारिक वीज़ा</li>
+                <li>సందర్శకుల విసా</li>
+                <li>విద్యార్థుల విసా & అడ్మిషన్</li>
+                <li>విద్యాభ్యాస విసా - FSTP</li>
+                <li>వ్యాపార విసా</li>
             </ul>
-            <button onClick={scrollTocontactus}>हमसे संपर्क करें</button>
+            <button onClick={scrollTocontactus}>మమ్మలు సంప్రదించండి</button>
           </div>
           <div className="sevices1">
             <img src={uk}/>
-            <h3>संयुक्त राज्य</h3>
+            <h3>యునైటైడ్ కింగ్డమ్</h3>
             <ul>
-                <li>आगंतुक वीज़ा</li>
-                <li>छात्र वीज़ा – टियर 4</li>
-                <li>काम वीज़ा – स्किल्ड वर्कर</li>
-                <li>व्यापारिक वीज़ा</li>
-                <li>इनोवेटर वीज़ा</li>
-                <li>HPI वीज़ा</li>
+                <li>సందర్శకుల విసా</li>
+                <li>విద్యార్థు విసా - టియర్ 4</li>
+                <li>వేలు విసా - స్కిల్డ్ వర్కర్</li>
+                <li>వేలు విసా - వర్కర్</li>
+                <li>ఇనోవేటర్ విసా</li>
+                <li>HPI విసా</li>
             </ul>
-            <button onClick={scrollTocontactus}>हमसे संपर्क करें</button>
+            <button onClick={scrollTocontactus}>మమ్మలు సంప్రదించండి</button>
           </div>
           <div className="sevices1">
             <img src={uae}/>
-            <h3>संयुक्त अरब इमारात</h3>
+            <h3>యునైటైడ్ అరబ్ ఎమిరేట్స్</h3>
             <ul>
-                <li>आगंतुक वीज़ा</li>
-                <li>पर्यटन वीज़ा</li>
-                <li>काम वीज़ा</li>
-                <li>गोल्डन वीज़ा</li>
-                <li>ग्रीन वीज़ा</li>
+                <li>సందర్శకుల విసా</li>
+                <li>టూరిస్ట్ విసా</li>
+                <li>వేలు విసా</li>
+                <li>గోల్డెన్ విసా</li>
+                <li>గ్రీన్ విసా</li>
             </ul>
-            <button onClick={scrollTocontactus}>हमसे संपर्क करें</button>
+            <button onClick={scrollTocontactus}>మమ్మలు సంప్రదించండి</button>
           </div>
           </section>
           </section>
         </div>
         <div className="contactustemp1">
           <footer>
-            <h2>हमसे संपर्क करें</h2>
+            <h2>మమ్మలు సంప్రదించండి</h2>
             <ul>
-              <li>@instagram</li>
+              <li>@ఇన్స్టాగ్రామ్</li>
               <li>77665544</li>
               <li>You@gmail.com</li>
             </ul>
@@ -282,4 +282,4 @@ const Hi = (props) => {
   );
 };
 
-export default Hi;
+export default Telugu;

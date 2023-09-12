@@ -16,6 +16,9 @@ import Gu from "./gu";
 import Hi from "./hi";
 import Ko from "./ko";
 import Ma from "./ma";
+import Ka from "./ka";
+import Tamil from "./ta";
+import Telugu from "./te";
 
 const router = createBrowserRouter([
   { path: "/", element: <English/> },
@@ -26,7 +29,10 @@ const router = createBrowserRouter([
   {path: '/gu', element:<Gu/>},
   {path: '/hi', element:<Hi/>},
   {path: '/ko', element:<Ko/>},
-  {path: '/ma', element:<Ma/>}
+  {path: '/ma', element:<Ma/>},
+  {path: '/ka', element:<Ka/>},
+  {path: '/ta', element:<Tamil/>},
+  {path : '/te', element:<Telugu/>},
 ]);
 function App() {
   return (
