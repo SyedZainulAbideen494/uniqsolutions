@@ -107,7 +107,7 @@ const English = (props) => {
         <div className="temp1head2">
         
           <header>
-            <h2 className="nameofweb">Uniqsolutions</h2>
+            <h2 className="nameofweb">Uniksolutions</h2>
             <ul>
               <li><button onClick={scrollToItems}>Our service</button></li>
               <li><button onClick={scrollTocontactus}>Contact us</button></li>
