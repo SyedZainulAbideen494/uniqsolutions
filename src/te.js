@@ -68,15 +68,14 @@ const Telugu = (props) => {
       {code: '', name: 'english'},
       { code: 'hi', name: 'हिन्दी' }, // Hindi
       { code: 'te', name: 'తెలుగు' }, // Telugu
-      { code: 'mr', name: 'मराठी' }, // Marathi
+      { code: 'ma', name: 'मराठी' }, // Marathi
       { code: 'ta', name: 'தமிழ்' }, // Tamil
-      { code: 'kn', name: 'ಕನ್ನಡ' }, // Kannada
+      { code: 'ka', name: 'ಕನ್ನಡ' }, // Kannada
       { code: 'fr', name: 'Français' }, // French
       { code: 'de', name: 'Deutsch' }, // German
       { code: 'ko', name: '한국어' }, // Korean
-      { code: 'uk', name: 'українська' }, // Ukrainian
       { code: 'ar', name: 'العربية' }, // Arabic
-      { code: 'zh', name: '中文' }, // Chinese
+      { code: 'ch', name: '中文' }, // Chinese
     ];
   
     const handleLanguageChange = (event) => {

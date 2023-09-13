@@ -66,6 +66,7 @@ const English = (props) => {
   const SimpleDropdown = () => {
     const languageOptions = [
       {code: 'en', name: 'language'},
+      {code: '', name: 'english'},
       { code: 'hi', name: 'हिन्दी' }, // Hindi
       { code: 'te', name: 'తెలుగు' }, // Telugu
       { code: 'ma', name: 'मराठी' }, // Marathi
