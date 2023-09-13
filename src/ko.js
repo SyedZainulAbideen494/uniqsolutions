@@ -19,7 +19,8 @@ import germ from './images/Germany.png'
 import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
-
+import banner1 from './images/Untitled design (10).png'
+import banner2 from './images/Untitled design (12).png'
 const Ko = (props) => {
 
   const itemsRef = useRef(null);
@@ -55,7 +56,7 @@ const Ko = (props) => {
       });
   };
 
-  const whatsappNumber = '7760372901'; // Replace with your desired WhatsApp number
+  const whatsappNumber = '9739839118'; // Replace with your desired WhatsApp number
   const message = '안녕하세요, 이것은 테스트 메시지입니다!'; // Replace with your desired message
 
   const handleWhatsAppClick = () => {
@@ -64,7 +65,8 @@ const Ko = (props) => {
 
   const SimpleDropdown = () => {
     const languageOptions = [
-      { code: 'en', name: 'English' },
+      {code: 'en', name: 'language'},
+      {code: '', name: 'english'},
       { code: 'hi', name: 'हिन्दी' }, // Hindi
       { code: 'te', name: 'తెలుగు' }, // Telugu
       { code: 'mr', name: 'मराठी' }, // Marathi
@@ -101,14 +103,14 @@ const Ko = (props) => {
     <Fragment>
       <div className="maindivtemp1">
         <div className="temp1head2">
+        
           <header>
             <h2 className="nameofweb">Uniqsolutions</h2>
             <ul>
               <li><button onClick={scrollToItems}>우리의 서비스</button></li>
-              <li><button onClick={scrollToaboutus}>회사 소개</button></li>
               <li><button onClick={scrollTocontactus}>문의하기</button></li>
             </ul>
-            <SimpleDropdown/>
+            <SimpleDropdown/><br/>
           </header>
         </div>
         <div className="header2temp1">
@@ -121,7 +123,7 @@ const Ko = (props) => {
             </div>
             <div className="temp1head1img">
               <secion>
-                <img src={banner}/>
+                <img src={banner1}/>
               </secion>
             </div>
           </header>
@@ -181,7 +183,7 @@ const Ko = (props) => {
             <button ref={itemsRef}>우리의 서비스</button>
           </section>
           <section className="imgtypecomplaytemp1">
-            <img src={banner}/>
+            <img src={banner2}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
@@ -268,14 +270,7 @@ const Ko = (props) => {
           </section>
         </div>
         <div className="contactustemp1">
-          <footer>
-            <h2>문의하기</h2>
-            <ul>
-              <li>@instagram</li>
-              <li>77665544</li>
-              <li>You@gmail.com</li>
-            </ul>
-          </footer>
+          
         </div>
       </div>
     </Fragment>

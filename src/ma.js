@@ -19,7 +19,8 @@ import germ from './images/Germany.png'
 import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
-
+import banner1 from './images/Untitled design (10).png'
+import banner2 from './images/Untitled design (12).png'
 const Ma = (props) => {
 
   const itemsRef = useRef(null);
@@ -55,7 +56,7 @@ const Ma = (props) => {
       });
   };
 
-  const whatsappNumber = '7760372901'; // आपल्याला आपल्या इच्छित WhatsApp नंबरसह बदला करा
+  const whatsappNumber = '9739839118'; // आपल्याला आपल्या इच्छित WhatsApp नंबरसह बदला करा
   const message = 'नमस्कार, ही एक चाचणी संदेश आहे!'; // आपल्या इच्छित संदेशासह बदला करा
 
   const handleWhatsAppClick = () => {
@@ -63,7 +64,8 @@ const Ma = (props) => {
   };
   const SimpleDropdown = () => {
     const languageOptions = [
-      { code: 'en', name: 'English' },
+      {code: 'en', name: 'language'},
+      {code: '', name: 'english'},
       { code: 'hi', name: 'हिन्दी' }, // Hindi
       { code: 'te', name: 'తెలుగు' }, // Telugu
       { code: 'mr', name: 'मराठी' }, // Marathi
@@ -101,14 +103,17 @@ const Ma = (props) => {
     <Fragment>
       <div className="maindivtemp1">
         <div className="temp1head2">
+        
           <header>
             <h2 className="nameofweb">अनिकसोल्यूशन्स</h2>
             <ul>
               <li><button onClick={scrollToItems}>आमची सेवा</button></li>
-              <li><button onClick={scrollToaboutus}>आमच्याबद्दल</button></li>
               <li><button onClick={scrollTocontactus}>आमच्याशी संपर्क साधा</button></li>
             </ul>
-            <SimpleDropdown/>
+            <SimpleDropdown/><br/>
+            <Link to='/'>
+            <button>English</button>
+            </Link>
           </header>
         </div>
         <div className="header2temp1">
@@ -121,7 +126,7 @@ const Ma = (props) => {
             </div>
             <div className="temp1head1img">
               <secion>
-                <img src={banner}/>
+                <img src={banner1}/>
               </secion>
             </div>
           </header>
@@ -181,7 +186,7 @@ const Ma = (props) => {
             <button ref={itemsRef}>आमची सेवा</button>
           </section>
           <section className="imgtypecomplaytemp1">
-            <img src={banner}/>
+            <img src={banner2}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
@@ -268,14 +273,7 @@ const Ma = (props) => {
           </section>
         </div>
         <div className="contactustemp1">
-          <footer>
-            <h2>आमच्याशी संपर्क साधा</h2>
-            <ul>
-              <li>@इंस्टाग्राम</li>
-              <li>७७६६५५४४४</li>
-              <li>You@gmail.com</li>
-            </ul>
-          </footer>
+         
         </div>
       </div>
     </Fragment>

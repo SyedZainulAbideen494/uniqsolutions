@@ -19,7 +19,8 @@ import germ from './images/Germany.png'
 import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
-
+import banner1 from './images/Untitled design (10).png'
+import banner2 from './images/Untitled design (12).png'
 const China = (props) => {
 
   const itemsRef = useRef(null);
@@ -55,7 +56,7 @@ const China = (props) => {
       });
   };
 
-  const whatsappNumber = '7760372901'; // 请替换为您的 WhatsApp 号码
+  const whatsappNumber = '9739839118'; // 请替换为您的 WhatsApp 号码
   const message = '你好，这是一条测试消息！'; // 请替换为您的消息
 
   const handleWhatsAppClick = () => {
@@ -63,7 +64,8 @@ const China = (props) => {
   };
   const SimpleDropdown = () => {
     const languageOptions = [
-      { code: 'en', name: 'English' },
+      {code: 'en', name: 'language'},
+      {code: '', name: 'english'},
       { code: 'hi', name: 'हिन्दी' }, // Hindi
       { code: 'te', name: 'తెలుగు' }, // Telugu
       { code: 'mr', name: 'मराठी' }, // Marathi
@@ -101,14 +103,14 @@ const China = (props) => {
     <Fragment>
       <div className="maindivtemp1">
         <div className="temp1head2">
+        
           <header>
             <h2 className="nameofweb">Uniqsolutions</h2>
             <ul>
               <li><button onClick={scrollToItems}>我们的服务</button></li>
-              <li><button onClick={scrollToaboutus}>关于我们</button></li>
               <li><button onClick={scrollTocontactus}>联系我们</button></li>
             </ul>
-            <SimpleDropdown/>
+            <SimpleDropdown/><br/>
           </header>
         </div>
         <div className="header2temp1">
@@ -121,7 +123,7 @@ const China = (props) => {
             </div>
             <div className="temp1head1img">
               <section>
-                <img src={banner}/>
+                <img src={banner1}/>
               </section>
             </div>
           </header>
@@ -181,7 +183,7 @@ const China = (props) => {
             <button ref={itemsRef}>我们的服务</button>
           </section>
           <section className="imgtypecomplaytemp1">
-            <img src={banner}/>
+            <img src={banner2}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
@@ -268,14 +270,7 @@ const China = (props) => {
           </section>
         </div>
         <div className="contactustemp1">
-          <footer>
-            <h2>联系我们</h2>
-            <ul>
-              <li>@instagram</li>
-              <li>77665544</li>
-              <li>You@gmail.com</li>
-            </ul>
-          </footer>
+          
         </div>
       </div>
     </Fragment>

@@ -19,7 +19,8 @@ import germ from './images/Germany.png'
 import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
-
+import banner1 from './images/Untitled design (10).png'
+import banner2 from './images/Untitled design (12).png'
 const Gu = (props) => {
 
   const itemsRef = useRef(null);
@@ -55,7 +56,7 @@ const Gu = (props) => {
       });
   };
 
-  const whatsappNumber = '7760372901'; // તમારો ક્રિયાના વોંટ્સએપ નંબરનો સ્થાનાંતરણ કરો
+  const whatsappNumber = '9739839118'; // તમારો ક્રિયાના વોંટ્સએપ નંબરનો સ્થાનાંતરણ કરો
   const message = 'હલો, આ એક ટેસ્ટ સંદેશ છે!'; // તમારો મોકલ્યો મેસેજ સાથે બદલો
 
   const handleWhatsAppClick = () => {
@@ -63,7 +64,8 @@ const Gu = (props) => {
   };
   const SimpleDropdown = () => {
     const languageOptions = [
-      { code: 'en', name: 'English' },
+      {code: 'en', name: 'language'},
+      {code: '', name: 'english'},
       { code: 'hi', name: 'हिन्दी' }, // Hindi
       { code: 'te', name: 'తెలుగు' }, // Telugu
       { code: 'mr', name: 'मराठी' }, // Marathi
@@ -101,14 +103,14 @@ const Gu = (props) => {
     <Fragment>
       <div className="maindivtemp1">
         <div className="temp1head2">
+        
           <header>
             <h2 className="nameofweb">યુનિકસોલ્યૂશન્સ</h2>
             <ul>
               <li><button onClick={scrollToItems}>આમાંની સેવા</button></li>
-              <li><button onClick={scrollToaboutus}>અમારા વિશે</button></li>
               <li><button onClick={scrollTocontactus}>અમારા સંપર્ક કરો</button></li>
             </ul>
-            <SimpleDropdown/>
+            <SimpleDropdown/><br/>
           </header>
         </div>
         <div className="header2temp1">
@@ -121,7 +123,7 @@ const Gu = (props) => {
             </div>
             <div className="temp1head1img">
               <section>
-                <img src={banner}/>
+                <img src={banner1}/>
               </section>
             </div>
           </header>
@@ -181,7 +183,7 @@ const Gu = (props) => {
             <button ref={itemsRef}>આમાંની સેવાઓ</button>
           </section>
           <section className="imgtypecomplaytemp1">
-            <img src={banner}/>
+            <img src={banner2}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
@@ -268,14 +270,7 @@ const Gu = (props) => {
           </section>
         </div>
         <div className="contactustemp1">
-          <footer>
-            <h2>અમારો સંપર્ક કરો</h2>
-            <ul>
-              <li>@ઇન્સ્ટાગ્રામ</li>
-              <li>77665544</li>
-              <li>You@gmail.com</li>
-            </ul>
-          </footer>
+          
         </div>
       </div>
     </Fragment>

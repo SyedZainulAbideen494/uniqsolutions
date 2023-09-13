@@ -19,6 +19,8 @@ import germ from './images/Germany.png'
 import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
+import banner1 from './images/Untitled design (10).png'
+import banner2 from './images/Untitled design (12).png'
 
 const English = (props) => {
 
@@ -55,34 +57,36 @@ const English = (props) => {
       });
   };
 
-  const whatsappNumber = '7760372901'; // Replace with your desired WhatsApp number
+  const whatsappNumber = '9739839118'; // Replace with your desired WhatsApp number
   const message = 'Hello, this is a test message!'; // Replace with your desired message
 
   const handleWhatsAppClick = () => {
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
   };
-
   const SimpleDropdown = () => {
     const languageOptions = [
-      { code: 'en', name: 'English' },
+      {code: 'en', name: 'language'},
       { code: 'hi', name: 'हिन्दी' }, // Hindi
       { code: 'te', name: 'తెలుగు' }, // Telugu
-      { code: 'mr', name: 'मराठी' }, // Marathi
+      { code: 'ma', name: 'मराठी' }, // Marathi
       { code: 'ta', name: 'தமிழ்' }, // Tamil
-      { code: 'kn', name: 'ಕನ್ನಡ' }, // Kannada
+      { code: 'ka', name: 'ಕನ್ನಡ' }, // Kannada
       { code: 'fr', name: 'Français' }, // French
       { code: 'de', name: 'Deutsch' }, // German
       { code: 'ko', name: '한국어' }, // Korean
-      { code: 'uk', name: 'українська' }, // Ukrainian
       { code: 'ar', name: 'العربية' }, // Arabic
-      { code: 'zh', name: '中文' }, // Chinese
+      { code: 'ch', name: '中文' }, // Chinese
     ];
   
     const handleLanguageChange = (event) => {
       const selectedLanguage = event.target.value;
   
       // Redirect to the selected language route
-      window.location.href = `/${selectedLanguage}`;
+      if (selectedLanguage === 'en') {
+        window.location.href = '/';
+      } else {
+        window.location.href = `/${selectedLanguage}`;
+      }
     };
   
     return (
@@ -97,20 +101,21 @@ const English = (props) => {
       </div>
     );
   };
-  
-
-
   return (
     <Fragment>
       <div className="maindivtemp1">
         <div className="temp1head2">
+        
           <header>
             <h2 className="nameofweb">Uniqsolutions</h2>
             <ul>
               <li><button onClick={scrollToItems}>Our service</button></li>
-              <li><button onClick={scrollToaboutus}>About us</button></li>
               <li><button onClick={scrollTocontactus}>Contact us</button></li>
-                <SimpleDropdown/>
+              <div>
+              <div className="simple-dropdown">
+              <SimpleDropdown/>
+    </div>
+              </div>
             </ul>
           </header>
         </div>
@@ -124,7 +129,7 @@ const English = (props) => {
             </div>
             <div className="temp1head1img">
               <secion>
-                <img src={banner}/>
+                <img src={banner1}/>
               </secion>
             </div>
           </header>
@@ -184,7 +189,7 @@ const English = (props) => {
             <button ref={itemsRef}>Our services</button>
           </section>
           <section className="imgtypecomplaytemp1">
-            <img src={banner}/>
+            <img src={banner2}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
@@ -270,16 +275,7 @@ const English = (props) => {
           </section>
           </section>
         </div>
-        <div className="contactustemp1">
-          <footer>
-            <h2>Contact us</h2>
-            <ul>
-              <li>@instagram</li>
-              <li>77665544</li>
-              <li>You@gmail.com</li>
-            </ul>
-          </footer>
-        </div>
+        
       </div>
     </Fragment>
   );

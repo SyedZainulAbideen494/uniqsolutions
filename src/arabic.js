@@ -19,6 +19,8 @@ import germ from './images/Germany.png'
 import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
+import banner1 from './images/Untitled design (10).png'
+import banner2 from './images/Untitled design (12).png'
 
 const Arabic = (props) => {
 
@@ -55,7 +57,7 @@ const Arabic = (props) => {
       });
   };
 
-  const whatsappNumber = '7760372901'; // Replace with your desired WhatsApp number
+  const whatsappNumber = '9739839118'; // Replace with your desired WhatsApp number
   const message = 'مرحبًا، هذه رسالة اختبار!'; // Replace with your desired message
 
   const handleWhatsAppClick = () => {
@@ -64,25 +66,29 @@ const Arabic = (props) => {
 
   const SimpleDropdown = () => {
     const languageOptions = [
-      { code: 'en', name: 'English' },
+      {code: 'en', name: 'language'},
+      {code: '', name: 'english'},
       { code: 'hi', name: 'हिन्दी' }, // Hindi
       { code: 'te', name: 'తెలుగు' }, // Telugu
-      { code: 'mr', name: 'मराठी' }, // Marathi
+      { code: 'ma', name: 'मराठी' }, // Marathi
       { code: 'ta', name: 'தமிழ்' }, // Tamil
-      { code: 'kn', name: 'ಕನ್ನಡ' }, // Kannada
+      { code: 'ka', name: 'ಕನ್ನಡ' }, // Kannada
       { code: 'fr', name: 'Français' }, // French
       { code: 'de', name: 'Deutsch' }, // German
       { code: 'ko', name: '한국어' }, // Korean
-      { code: 'uk', name: 'українська' }, // Ukrainian
       { code: 'ar', name: 'العربية' }, // Arabic
-      { code: 'zh', name: '中文' }, // Chinese
+      { code: 'ch', name: '中文' }, // Chinese
     ];
   
     const handleLanguageChange = (event) => {
       const selectedLanguage = event.target.value;
   
       // Redirect to the selected language route
-      window.location.href = `/${selectedLanguage}`;
+      if (selectedLanguage === 'en') {
+        window.location.href = '/';
+      } else {
+        window.location.href = `/${selectedLanguage}`;
+      }
     };
   
     return (
@@ -101,14 +107,15 @@ const Arabic = (props) => {
     <Fragment>
       <div className="maindivtemp1">
         <div className="temp1head2">
+        
           <header>
+          
             <h2 className="nameofweb">حلول فريدة</h2>
             <ul>
               <li><button onClick={scrollToItems}>خدماتنا</button></li>
-              <li><button onClick={scrollToaboutus}>عنا</button></li>
               <li><button onClick={scrollTocontactus}>اتصل بنا</button></li>
             </ul>
-            <SimpleDropdown/>
+            <SimpleDropdown/><br/>
           </header>
         </div>
         <div className="header2temp1">
@@ -121,7 +128,7 @@ const Arabic = (props) => {
             </div>
             <div className="temp1head1img">
               <secion>
-                <img src={banner}/>
+                <img src={banner1}/>
               </secion>
             </div>
           </header>
@@ -181,7 +188,7 @@ const Arabic = (props) => {
             <button ref={itemsRef}>خدماتنا</button>
           </section>
           <section className="imgtypecomplaytemp1">
-            <img src={banner}/>
+            <img src={banner2}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
@@ -268,14 +275,7 @@ const Arabic = (props) => {
           </section>
         </div>
         <div className="contactustemp1">
-          <footer>
-            <h2>اتصل بنا</h2>
-            <ul>
-              <li>@instagram</li>
-              <li>77665544</li>
-              <li>You@gmail.com</li>
-            </ul>
-          </footer>
+          
         </div>
       </div>
     </Fragment>

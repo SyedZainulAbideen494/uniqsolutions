@@ -19,7 +19,8 @@ import germ from './images/Germany.png'
 import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
-
+import banner1 from './images/Untitled design (10).png'
+import banner2 from './images/Untitled design (12).png'
 const Ka = (props) => {
 
   const itemsRef = useRef(null);
@@ -55,7 +56,7 @@ const Ka = (props) => {
       });
   };
 
-  const whatsappNumber = '7760372901'; // ನಿಮ್ಮ ಇಚ್ಛಿಸುವ ವಾಟ್ಸ್ಯಾಪ್ ಸಂಖ್ಯೆಯನ್ನು ಬದಲಾಯಿಸಿ
+  const whatsappNumber = '9739839118'; // ನಿಮ್ಮ ಇಚ್ಛಿಸುವ ವಾಟ್ಸ್ಯಾಪ್ ಸಂಖ್ಯೆಯನ್ನು ಬದಲಾಯಿಸಿ
   const message = 'ನಮಸ್ಕಾರ, ಇದು ಒಂದು ಪರೀಕ್ಷೆ ಸಂದೇಶವಾಗಿದೆ!'; // ನಿಮ್ಮ ಇಚ್ಛಿತ ಸಂದೇಶಕ್ಕಾಗಿ ಬದಲಾಯಿಸಿ
 
   const handleWhatsAppClick = () => {
@@ -63,7 +64,8 @@ const Ka = (props) => {
   };
   const SimpleDropdown = () => {
     const languageOptions = [
-      { code: 'en', name: 'English' },
+      {code: 'en', name: 'language'},
+      {code: '', name: 'english'},
       { code: 'hi', name: 'हिन्दी' }, // Hindi
       { code: 'te', name: 'తెలుగు' }, // Telugu
       { code: 'mr', name: 'मराठी' }, // Marathi
@@ -100,15 +102,18 @@ const Ka = (props) => {
   return (
     <Fragment>
       <div className="maindivtemp1">
+      
+            
         <div className="temp1head2">
+       
           <header>
             <h2 className="nameofweb">ಅನಿಕ್ಸೊಲ್ಯೂಷನ್ಸ್</h2>
             <ul>
               <li><button onClick={scrollToItems}>ನಮ್ಮ ಸೇವೆಗಳು</button></li>
-              <li><button onClick={scrollToaboutus}>ನಮ್ಮ ಬಗ್ಗೆ</button></li>
               <li><button onClick={scrollTocontactus}>ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</button></li>
             </ul>
-            <SimpleDropdown/>
+            <SimpleDropdown/><br/>
+            
           </header>
         </div>
         <div className="header2temp1">
@@ -121,7 +126,7 @@ const Ka = (props) => {
             </div>
             <div className="temp1head1img">
               <secion>
-                <img src={banner}/>
+                <img src={banner1}/>
               </secion>
             </div>
           </header>
@@ -181,7 +186,7 @@ const Ka = (props) => {
             <button ref={itemsRef}>ನಮ್ಮ ಸೇವೆಗಳು</button>
           </section>
           <section className="imgtypecomplaytemp1">
-            <img src={banner}/>
+            <img src={banner2}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
@@ -268,14 +273,7 @@ const Ka = (props) => {
           </section>
         </div>
         <div className="contactustemp1">
-          <footer>
-            <h2>ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</h2>
-            <ul>
-              <li>@ಇನ್ಸ್ಟಾಗ್ರಾಂ</li>
-              <li>77665544</li>
-              <li>You@gmail.com</li>
-            </ul>
-          </footer>
+          
         </div>
       </div>
     </Fragment>

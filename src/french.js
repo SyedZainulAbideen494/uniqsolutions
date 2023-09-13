@@ -19,7 +19,8 @@ import germ from './images/Germany.png'
 import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
-
+import banner1 from './images/Untitled design (10).png'
+import banner2 from './images/Untitled design (12).png'
 const French = (props) => {
 
   const itemsRef = useRef(null);
@@ -55,7 +56,7 @@ const French = (props) => {
       });
   };
 
-  const whatsappNumber = '7760372901'; // Replace with your desired WhatsApp number
+  const whatsappNumber = '9739839118'; // Replace with your desired WhatsApp number
   const message = 'Bonjour, ceci est un message de test !'; // Replace with your desired message
 
   const handleWhatsAppClick = () => {
@@ -63,7 +64,8 @@ const French = (props) => {
   };
   const SimpleDropdown = () => {
     const languageOptions = [
-      { code: 'en', name: 'English' },
+      {code: 'en', name: 'language'},
+      {code: '', name: 'english'},
       { code: 'hi', name: 'हिन्दी' }, // Hindi
       { code: 'te', name: 'తెలుగు' }, // Telugu
       { code: 'mr', name: 'मराठी' }, // Marathi
@@ -101,14 +103,14 @@ const French = (props) => {
     <Fragment>
       <div className="maindivtemp1">
         <div className="temp1head2">
+        
           <header>
             <h2 className="nameofweb">Uniqsolutions</h2>
             <ul>
               <li><button onClick={scrollToItems}>Nos services</button></li>
-              <li><button onClick={scrollToaboutus}>À propos de nous</button></li>
               <li><button onClick={scrollTocontactus}>Contactez-nous</button></li>
             </ul>
-            <SimpleDropdown/>
+            <SimpleDropdown/><br/>
           </header>
         </div>
         <div className="header2temp1">
@@ -121,7 +123,7 @@ const French = (props) => {
             </div>
             <div className="temp1head1img">
               <secion>
-                <img src={banner}/>
+                <img src={banner1}/>
               </secion>
             </div>
           </header>
@@ -181,7 +183,7 @@ const French = (props) => {
             <button ref={itemsRef}>Nos services</button>
           </section>
           <section className="imgtypecomplaytemp1">
-            <img src={banner}/>
+            <img src={banner2}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
@@ -268,14 +270,7 @@ const French = (props) => {
           </section>
         </div>
         <div className="contactustemp1">
-          <footer>
-            <h2>Contactez-nous</h2>
-            <ul>
-              <li>@instagram</li>
-              <li>77665544</li>
-              <li>You@gmail.com</li>
-            </ul>
-          </footer>
+        
         </div>
       </div>
     </Fragment>

@@ -19,7 +19,8 @@ import germ from './images/Germany.png'
 import uae from './images/UAE.png'
 import uk from './images/UK.png'
 import USA from './images/USA.png'
-
+import banner1 from './images/Untitled design (10).png'
+import banner2 from './images/Untitled design (12).png'
 const Deu = (props) => {
 
   const itemsRef = useRef(null);
@@ -55,7 +56,7 @@ const Deu = (props) => {
       });
   };
 
-  const whatsappNumber = '7760372901'; // Ersetzen Sie dies durch Ihre gewünschte WhatsApp-Nummer
+  const whatsappNumber = '9739839118'; // Ersetzen Sie dies durch Ihre gewünschte WhatsApp-Nummer
   const message = 'Hallo, dies ist eine Testnachricht!'; // Ersetzen Sie dies durch Ihre gewünschte Nachricht
 
   const handleWhatsAppClick = () => {
@@ -64,7 +65,8 @@ const Deu = (props) => {
 
   const SimpleDropdown = () => {
     const languageOptions = [
-      { code: 'en', name: 'English' },
+      {code: 'en', name: 'language'},
+      {code: '', name: 'english'},
       { code: 'hi', name: 'हिन्दी' }, // Hindi
       { code: 'te', name: 'తెలుగు' }, // Telugu
       { code: 'mr', name: 'मराठी' }, // Marathi
@@ -101,14 +103,14 @@ const Deu = (props) => {
     <Fragment>
       <div className="maindivtemp1">
         <div className="temp1head2">
+        
           <header>
             <h2 className="nameofweb">Uniqsolutions</h2>
             <ul>
               <li><button onClick={scrollToItems}>Unsere Dienstleistungen</button></li>
-              <li><button onClick={scrollToaboutus}>Über uns</button></li>
               <li><button onClick={scrollTocontactus}>Kontaktiere uns</button></li>
             </ul>
-            <SimpleDropdown/>
+            <SimpleDropdown/><br/>
           </header>
         </div>
         <div className="header2temp1">
@@ -121,7 +123,7 @@ const Deu = (props) => {
             </div>
             <div className="temp1head1img">
               <section>
-                <img src={banner}/>
+                <img src={banner1}/>
               </section>
             </div>
           </header>
@@ -181,7 +183,7 @@ const Deu = (props) => {
             <button ref={itemsRef}>Unsere Dienstleistungen</button>
           </section>
           <section className="imgtypecomplaytemp1">
-            <img src={banner}/>
+            <img src={banner2}/>
           </section>
         </div>
         <div className="ourservicestemp1" ref={itemsRef}>
@@ -268,14 +270,7 @@ const Deu = (props) => {
           </section>
         </div>
         <div className="contactustemp1">
-          <footer>
-            <h2>Kontaktiere uns</h2>
-            <ul>
-              <li>@instagram</li>
-              <li>77665544</li>
-              <li>You@gmail.com</li>
-            </ul>
-          </footer>
+         
         </div>
       </div>
     </Fragment>
